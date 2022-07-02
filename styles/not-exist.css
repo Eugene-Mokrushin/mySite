@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK0nS.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v8/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v40/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4bbLPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Harlow Solid Italic";
+  src: url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.eot");
+  /* IE9*/
+  src: url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.woff2") format("woff2"), /* chrome firefox */ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.woff") format("woff"), /* chrome firefox */ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.svg#Harlow Solid Italic") format("svg");
+  /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK0nS.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtapYCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v21/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vqPQw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poiretone/v14/UqyVK80NJXN4zfRgbdfbk5k.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9664bc), color-stop(50%, #39279a), to(#0f0925));
+  background: linear-gradient(180deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+}
+body::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#D0368A), color-stop(99%, #708AD4));
+  background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+  border-radius: 20px;
+}
+body {
+  width: 60vw;
+}
+body .container {
+  background-color: #0f0925;
+  background-image: url(photos/gradients/gradient_5279.png), url(photos/gradients/gradient_5278.png), url(photos/gradients/gradient_5276.png), url(photos/gradients/gradient_5280.png);
+  background-repeat: no-repeat;
+  background-position-x: left, left, right, right;
+  background-position-y: center, center, center, center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .container main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+body .container main .back-to-home {
+  margin-top: 40px;
+}
+body .container main .back-to-home a {
+  text-decoration: none;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #39279a)) left / var(--p, 0) no-repeat;
+  background: -o-linear-gradient(#39279a 0 0) left / var(--p, 0) no-repeat;
+  background: linear-gradient(#39279a 0 0) left / var(--p, 0) no-repeat;
+  -webkit-transition: 0.4s, background-position 0s;
+  -o-transition: 0.4s, background-position 0s;
+  transition: 0.4s, background-position 0s;
+  padding: 10px 10px;
+}
+body .container main .back-to-home a:hover {
+  --p: 100%;
+  background-position: right;
+}
+body .container main .err {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .container main .err .text {
+  color: white;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+}
+body .container main .err .num {
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-weight: 400;
+  font-size: 135px;
+}

@@ -1,0 +1,297 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK0nS.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v8/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Harlow Solid Italic";
+  src: url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.eot");
+  /* IE9*/
+  src: url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.woff2") format("woff2"), /* chrome firefox */ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.woff") format("woff"), /* chrome firefox */ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.svg#Harlow Solid Italic") format("svg");
+  /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK0nS.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v40/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4bbLPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9664bc), color-stop(50%, #39279a), to(#0f0925));
+  background: linear-gradient(180deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+  /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#D0368A), color-stop(99%, #708AD4));
+  background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+}
+body .container .button-back {
+  width: 100%;
+  height: 80px;
+}
+body .container .button-back .go-back-link {
+  margin-top: 20px;
+  margin-left: 70px;
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+body .container .main-filler {
+  margin-top: 50px;
+  width: 100%;
+}
+body .container .main-filler form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .container .main-filler form .new-post-title {
+  text-align: center;
+  color: white;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  outline: none;
+  width: 90%;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid #D0368A;
+}
+body .container .main-filler form .new-post-title:focus {
+  text-align: center;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  color: white;
+}
+body .container .main-filler form .new-post-title::-webkit-input-placeholder {
+  text-align: center;
+  color: #949494;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+body .container .main-filler form .new-post-title::-moz-placeholder {
+  text-align: center;
+  color: #949494;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+body .container .main-filler form .new-post-title:-ms-input-placeholder {
+  text-align: center;
+  color: #949494;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+body .container .main-filler form .new-post-title::-ms-input-placeholder {
+  text-align: center;
+  color: #949494;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+body .container .main-filler form .new-post-title::placeholder {
+  text-align: center;
+  color: #949494;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+body .container .main-filler form .new-post-main-text {
+  border-radius: 10px;
+  resize: none;
+  border: none;
+  outline: none;
+  margin-top: 50px;
+  background-color: rgba(104, 104, 104, 0.356);
+  width: 80%;
+  min-height: 600px;
+  color: white;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px;
+}
+body .container .main-filler form .create-btn {
+  margin-top: 50px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  height: 50px;
+  width: 150px;
+  color: white;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #708AD4;
+  border: none;
+}
+body .container .main-filler form .create-btn:hover {
+  outline: 1px solid white;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+body .container .main-filler form #preview {
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  padding: 20px;
+  resize: none;
+  margin-top: 50px;
+  width: 80%;
+  height: 400px;
+  background-color: rgba(104, 104, 104, 0.356);
+  outline: none;
+  border: none;
+}
+body .container .main-filler form .drop-zone {
+  margin-top: 50px;
+  min-width: 200px;
+  height: 200px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  border: 4px dashed #D0368A;
+  border-radius: 10px;
+}
+body .container .main-filler form .drop-zone--over {
+  border-style: solid;
+}
+body .container .main-filler form .drop-zone__input {
+  display: none;
+}
+body .container .main-filler form .drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ccc;
+  background-size: cover;
+  position: relative;
+}
+body .container .main-filler form .drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+body .container #editorjs {
+  border-radius: 10px;
+  resize: none;
+  border: none;
+  outline: none;
+  margin-top: 50px;
+  background-color: rgba(104, 104, 104, 0.356);
+  width: 80%;
+  min-height: 600px;
+  color: white;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px;
+}
+body .container .ce-toolbox {
+  color: black;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+}
+body .container #save-article {
+  margin-top: 50px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  height: 50px;
+  width: 150px;
+  color: white;
+  font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #708AD4;
+  border: none;
+}

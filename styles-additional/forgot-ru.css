@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK0nS.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v8/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Harlow Solid Italic";
+  src: url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.eot");
+  /* IE9*/
+  src: url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.woff2") format("woff2"), /* chrome firefox */ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.woff") format("woff"), /* chrome firefox */ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.svg#Harlow Solid Italic") format("svg");
+  /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK0nS.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v40/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4bbLPrQ.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9664bc), color-stop(50%, #39279a), to(#0f0925));
+  background: linear-gradient(180deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+  /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#D0368A), color-stop(99%, #708AD4));
+  background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+}
+@media only screen and (min-width: 1540px) {
+  body {
+    background-color: #0f0925;
+    width: 100%;
+  }
+  body canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  body #particles-js {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    height: clamp(930px, 100vh, 3424px);
+  }
+}
+body .container {
+  background-color: #0f0925;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .container main {
+  background-image: url(photos/gradients/gradient_5279.png), url(photos/gradients/gradient_5278.png), url(photos/gradients/gradient_5276.png), url(photos/gradients/gradient_5286.png);
+  background-repeat: no-repeat;
+  background-position-x: left, left, right, right;
+  background-position-y: center,center, top, bottom;
+  background-size: contain;
+}
+body .container main .text-recover {
+  width: 500px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  margin-top: 30px;
+}
+body .container main button {
+  width: 200px !important;
+}
+@media only screen and (min-width: 300px) and (max-width: 1539px) {
+  canvas {
+    display: none;
+  }
+  #particles-js {
+    display: none;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 890px) {
+  .log-in {
+    margin-top: -27px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+    text-align: center;
+  }
+  .text-recover {
+    text-align: center;
+    width: initial !important;
+    font-size: 15px !important;
+  }
+}

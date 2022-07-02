@@ -1,0 +1,1290 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK0nS.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/urbanist/v8/L0xjDF02iFML4hGCyOCpRdycFsGxSrqDFRkfFg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Harlow Solid Italic";
+  src: url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.eot");
+  /* IE9*/
+  src: url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.woff2") format("woff2"), /* chrome firefox */ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.woff") format("woff"), /* chrome firefox */ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/ url("http://db.onlinewebfonts.com/t/cfa5d186573233bc80be624c35a4702b.svg#Harlow Solid Italic") format("svg");
+  /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pressstart2p/v14/e3t4euO8T-267oIAQAu6jDQyK0nS.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v27/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtapYCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v40/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4bbLPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v21/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vqPQw.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9664bc), color-stop(50%, #39279a), to(#0f0925));
+  background: linear-gradient(180deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+  /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#D0368A), color-stop(99%, #708AD4));
+  background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+}
+body {
+  background-color: #0f0925;
+  width: 100%;
+}
+body canvas {
+  display: block;
+  vertical-align: bottom;
+}
+body #particles-js {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 3840px;
+}
+body .container {
+  background-color: #0f0925;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1540px;
+  min-height: 100vh;
+}
+@media only screen and (min-width: 1024px) {
+  body main .text-wrapper {
+    height: 200px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .text-wrapper .text-scramble {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 48px;
+    color: #FAFAFA;
+  }
+  body main .text-wrapper .dud {
+    color: #708AD4;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body main .my-description {
+    background-image: url(../photos/gradients/gradient_5282.png), url(../photos/gradients/gradient_5281.png), url(../photos/icos/diamond_5244.png), url(../photos/icos/diamond_5245.png);
+    background-repeat: no-repeat;
+    background-position-x: left, right, 94%, 3%;
+    background-position-y: center, center, 10%, 90%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top: 1px solid white;
+  }
+  body main .my-description .photo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+  body main .my-description .photo img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: relative;
+    max-width: 70%;
+    margin: 20px;
+    -webkit-filter: hue-rotate(45deg);
+    -moz-filter: hue-rotate(79deg);
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    border-radius: 30px;
+  }
+  body main .my-description .photo img:hover {
+    filter: hue-rotate(0);
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  body main .my-description .description {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 50%;
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    margin: 20px;
+    margin-top: 70px;
+  }
+  body main .my-description .description .title {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    width: 80%;
+  }
+  body main .my-description .description .main-text {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body main .skills-text {
+    height: 79px;
+    background: -o-linear-gradient(45deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+    background: linear-gradient(45deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+    padding-bottom: 2px;
+    width: 100%;
+  }
+  body main .skills-text .skills-title-main {
+    background-color: #ececec;
+    background-image: url(../photos/icos/shape_5230.png);
+    background-repeat: no-repeat;
+    background-position-x: 2%;
+    background-position-y: 50%;
+  }
+  body main .skills-text .skills-title-main span {
+    display: inline-block;
+    color: black;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    padding-left: 10%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  body main .globe-skills-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ececec;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .globe-skills-wrapper .content .tagcloud {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin-left: 30%;
+  }
+  body main .globe-skills-wrapper .content .tagcloud--item:hover {
+    color: #36454F;
+  }
+  body main .globe-skills-wrapper .content .tagcloud--item {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body main .history {
+    background-image: url(../photos/icos/shape_5048.png);
+    background-repeat: no-repeat;
+    background-position-x: 2%;
+    background-position-y: 50%;
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid white;
+  }
+  body main .history span {
+    margin-left: 10%;
+    color: white;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    width: 80%;
+  }
+  body main .my-life-path {
+    background-image: url(../photos/gradients/gradient_5279.png), url(../photos/gradients/gradient_5275.png), url(../photos/icos/diamond_5047.png);
+    background-repeat: no-repeat;
+    background-position-x: 0, right, right;
+    background-position-y: 0, top, bottom;
+    height: 600px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .my-life-path .life-point-wrapper {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    --background-history: linear-gradient(90deg, #9664bc 0%, #708ad4 50%, #39279a 100%);
+  }
+  body main .my-life-path .life-point-wrapper .life-points {
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .my-life-path .life-point-wrapper .life-points .text {
+    width: 66%;
+    padding-left: 20px;
+  }
+  body main .my-life-path .life-point-wrapper .life-points .text .company-title {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  body main .my-life-path .life-point-wrapper .life-points .text .job-title {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  body main .my-life-path .life-point-wrapper .life-points .years-of-exp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 33%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .my-life-path .life-point-wrapper .life-points .years-of-exp .years {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  body main .my-life-path .life-point-wrapper #fst-history {
+    position: relative;
+    margin-top: 80%;
+    background: var(--background-history);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+            animation: gradient 10s ease infinite;
+  }
+  body main .my-life-path .life-point-wrapper #fst-history:hover {
+    outline: 3px solid white;
+  }
+  body main .my-life-path .life-point-wrapper #scnd-history {
+    margin-top: 60%;
+    background: var(--background-history);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+            animation: gradient 10s ease infinite;
+  }
+  body main .my-life-path .life-point-wrapper #scnd-history:hover {
+    outline: 3px solid white;
+  }
+  body main .my-life-path .life-point-wrapper #thrd-history {
+    margin-top: 40%;
+    background: var(--background-history);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+            animation: gradient 10s ease infinite;
+  }
+  body main .my-life-path .life-point-wrapper #thrd-history:hover {
+    outline: 3px solid white;
+  }
+  body main .my-life-path .life-point-wrapper #frth-history {
+    margin-top: 20%;
+    background: var(--background-history);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+            animation: gradient 10s ease infinite;
+  }
+  body main .my-life-path .life-point-wrapper #frth-history:hover {
+    outline: 3px solid white;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body main .currently-reading-wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body main .currently-reading-wrapper .reading-title-main-wrapper {
+    height: 80px;
+    background: -o-linear-gradient(45deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+    background: linear-gradient(45deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+    padding-bottom: 2px;
+    width: 100%;
+  }
+  body main .currently-reading-wrapper .reading-title-main-wrapper .reading-title-main {
+    background-color: #ececec;
+    background-image: url(../photos/icos/shape_5230.png);
+    background-repeat: no-repeat;
+    background-position-x: 2%;
+    background-position-y: 50%;
+  }
+  body main .currently-reading-wrapper .reading-title-main-wrapper .reading-title-main .reading-title {
+    display: inline-block;
+    color: black;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    padding-left: 10%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  body main .currently-reading-wrapper .image-wrapper {
+    background-color: #ececec;
+    width: 100%;
+    height: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .currently-reading-wrapper .image-wrapper .content {
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 33%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .currently-reading-wrapper .image-wrapper .content img {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.5;
+  }
+  body main .currently-reading-wrapper .image-wrapper .content .title {
+    color: black;
+    opacity: 0.8;
+    padding-top: 10px;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  body main .currently-reading-wrapper .image-wrapper .content .author {
+    color: black;
+    opacity: 0.8;
+    padding-top: 10px;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  body main .currently-reading-wrapper .image-wrapper .content:hover img,
+  body main .currently-reading-wrapper .image-wrapper .title,
+  body main .currently-reading-wrapper .image-wrapper .author {
+    opacity: 1;
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 630px) {
+  canvas {
+    display: none;
+  }
+  #particles-js {
+    display: none;
+  }
+  main .text-wrapper {
+    height: 200px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .text-wrapper .text-scramble {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 30px;
+    color: #FAFAFA;
+  }
+  main .text-wrapper .dud {
+    width: 90%;
+    color: #708AD4;
+  }
+  main .my-description {
+    background-image: url(../photos/gradients/gradient_5282.png);
+    background-repeat: no-repeat;
+    background-position-x: left, right, 94%, 3%;
+    background-position-y: center, center, 10%, 90%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top: 1px solid white;
+  }
+  main .my-description .photo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+    height: 100%;
+  }
+  main .my-description .photo img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: relative;
+    max-width: 80vw;
+    margin: 20px;
+    filter: hue-rotate(79deg);
+    -webkit-filter: hue-rotate(79deg);
+    -moz-filter: hue-rotate(79deg);
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    border-radius: 30px;
+  }
+  main .my-description .photo img:hover {
+    filter: hue-rotate(0);
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  main .my-description .description {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 90%;
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .my-description .description .title {
+    text-align: center;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    width: 100%;
+  }
+  main .my-description .description .main-text {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  main .skills-text {
+    background: -o-linear-gradient(45deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+    background: linear-gradient(45deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+    padding-bottom: 2px;
+    width: 100%;
+  }
+  main .skills-text .skills-title-main {
+    background-color: #ececec;
+    background-image: url(../photos/icos/shape_5230.png);
+    background-size: 77px;
+    background-repeat: no-repeat;
+    background-position-x: 2%;
+    background-position-y: 50%;
+  }
+  main .skills-text .skills-title-main span {
+    display: inline-block;
+    color: black;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    padding-left: 94px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  main .globe-skills-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ececec;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .globe-skills-wrapper .content .tagcloud {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+  }
+  main .globe-skills-wrapper .content .tagcloud--item:hover {
+    color: #36454F;
+  }
+  main .globe-skills-wrapper .content .tagcloud--item {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  }
+  main .history {
+    background-image: url(../photos/icos/shape_5048.png);
+    background-repeat: no-repeat;
+    background-size: 77px;
+    background-position-x: 2%;
+    background-position-y: 50%;
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid white;
+  }
+  main .history span {
+    padding-left: 94px;
+    color: white;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    width: 100%;
+  }
+  main .my-life-path {
+    background-image: url(../photos/gradients/gradient_5279.png), url(../photos/gradients/gradient_5275.png), url(../photos/icos/diamond_5047.png);
+    background-repeat: no-repeat;
+    background-position-x: 0, right, right;
+    background-position-y: 0, top, bottom;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .my-life-path .life-point-wrapper {
+    margin-top: 10px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    --background-history: linear-gradient(90deg, #9664bc 0%, #708ad4 50%, #39279a 100%);
+  }
+  main .my-life-path .life-point-wrapper .life-points {
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .my-life-path .life-point-wrapper .life-points .text {
+    width: 66%;
+    padding-left: 20px;
+  }
+  main .my-life-path .life-point-wrapper .life-points .text .company-title {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  main .my-life-path .life-point-wrapper .life-points .text .job-title {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  main .my-life-path .life-point-wrapper .life-points .years-of-exp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 33%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .my-life-path .life-point-wrapper .life-points .years-of-exp .years {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  main .my-life-path .life-point-wrapper #fst-history {
+    position: relative;
+    background: var(--background-history);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+            animation: gradient 10s ease infinite;
+  }
+  main .my-life-path .life-point-wrapper #fst-history:hover {
+    outline: 3px solid white;
+  }
+  main .my-life-path .life-point-wrapper #scnd-history {
+    background: var(--background-history);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+            animation: gradient 10s ease infinite;
+  }
+  main .my-life-path .life-point-wrapper #scnd-history:hover {
+    outline: 3px solid white;
+  }
+  main .my-life-path .life-point-wrapper #thrd-history {
+    background: var(--background-history);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+            animation: gradient 10s ease infinite;
+  }
+  main .my-life-path .life-point-wrapper #thrd-history:hover {
+    outline: 3px solid white;
+  }
+  main .my-life-path .life-point-wrapper #frth-history {
+    background: var(--background-history);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+            animation: gradient 10s ease infinite;
+    margin-bottom: 10px;
+  }
+  main .my-life-path .life-point-wrapper #frth-history:hover {
+    outline: 3px solid white;
+  }
+  main .currently-reading-wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .currently-reading-wrapper .reading-title-main-wrapper {
+    background: -o-linear-gradient(45deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+    background: linear-gradient(45deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+    padding-bottom: 2px;
+    width: 100%;
+  }
+  main .currently-reading-wrapper .reading-title-main-wrapper .reading-title-main {
+    background-color: #ececec;
+    background-image: url(../photos/icos/shape_5230.png);
+    background-size: 77px;
+    background-repeat: no-repeat;
+    background-position-x: 2%;
+    background-position-y: 50%;
+  }
+  main .currently-reading-wrapper .reading-title-main-wrapper .reading-title-main .reading-title {
+    display: inline-block;
+    color: black;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-left: 94px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  main .currently-reading-wrapper .image-wrapper {
+    background-color: #ececec;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .currently-reading-wrapper .image-wrapper .content {
+    margin-top: 20px;
+    height: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 62%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .currently-reading-wrapper .image-wrapper .content img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  main .currently-reading-wrapper .image-wrapper .content .title {
+    color: black;
+    opacity: 0.8;
+    padding-top: 10px;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  main .currently-reading-wrapper .image-wrapper .content .author {
+    color: black;
+    opacity: 0.8;
+    padding-top: 10px;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  main .currently-reading-wrapper .image-wrapper .content:last-child {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 631px) and (max-width: 1023px) {
+  canvas {
+    display: none;
+  }
+  #particles-js {
+    display: none;
+  }
+  main .text-wrapper {
+    height: 200px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .text-wrapper .text-scramble {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 30px;
+    color: #FAFAFA;
+  }
+  main .text-wrapper .dud {
+    width: 90%;
+    color: #708AD4;
+  }
+  main .my-description {
+    background-image: url(../photos/gradients/gradient_5282.png);
+    background-repeat: no-repeat;
+    background-position-x: left, right, 94%, 3%;
+    background-position-y: center, center, 10%, 90%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top: 1px solid white;
+  }
+  main .my-description .photo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+    height: 100%;
+  }
+  main .my-description .photo img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: relative;
+    max-width: 80vw;
+    margin: 20px;
+    filter: hue-rotate(79deg);
+    -webkit-filter: hue-rotate(79deg);
+    -moz-filter: hue-rotate(79deg);
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    border-radius: 30px;
+  }
+  main .my-description .photo img:hover {
+    filter: hue-rotate(0);
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  main .my-description .description {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 90%;
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .my-description .description .title {
+    text-align: center;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    width: 100%;
+  }
+  main .my-description .description .main-text {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  main .skills-text {
+    background: -o-linear-gradient(45deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+    background: linear-gradient(45deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+    padding-bottom: 2px;
+    width: 100%;
+  }
+  main .skills-text .skills-title-main {
+    background-color: #ececec;
+    background-image: url(../photos/icos/shape_5230.png);
+    background-size: 77px;
+    background-repeat: no-repeat;
+    background-position-x: 2%;
+    background-position-y: 50%;
+  }
+  main .skills-text .skills-title-main span {
+    display: inline-block;
+    color: black;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-left: 94px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  main .globe-skills-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ececec;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .globe-skills-wrapper .content .tagcloud {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+  }
+  main .globe-skills-wrapper .content .tagcloud--item:hover {
+    color: #36454F;
+  }
+  main .globe-skills-wrapper .content .tagcloud--item {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+  }
+  main .history {
+    background-image: url(../photos/icos/shape_5048.png);
+    background-repeat: no-repeat;
+    background-size: 77px;
+    background-position-x: 2%;
+    background-position-y: 50%;
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid white;
+  }
+  main .history span {
+    margin-left: 94px;
+    color: white;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    width: 100%;
+  }
+  main .my-life-path {
+    background-image: url(../photos/gradients/gradient_5279.png), url(../photos/gradients/gradient_5275.png), url(../photos/icos/diamond_5047.png);
+    background-repeat: no-repeat;
+    background-position-x: 0, right, right;
+    background-position-y: 0, top, bottom;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .my-life-path .life-point-wrapper {
+    margin-top: 10px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    --background-history: linear-gradient(90deg, #9664bc 0%, #708ad4 50%, #39279a 100%);
+  }
+  main .my-life-path .life-point-wrapper .life-points {
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .my-life-path .life-point-wrapper .life-points .text {
+    width: 66%;
+    padding-left: 20px;
+  }
+  main .my-life-path .life-point-wrapper .life-points .text .company-title {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  main .my-life-path .life-point-wrapper .life-points .text .job-title {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  main .my-life-path .life-point-wrapper .life-points .years-of-exp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 33%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .my-life-path .life-point-wrapper .life-points .years-of-exp .years {
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  main .my-life-path .life-point-wrapper #fst-history {
+    position: relative;
+    background: var(--background-history);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+            animation: gradient 10s ease infinite;
+  }
+  main .my-life-path .life-point-wrapper #fst-history:hover {
+    outline: 3px solid white;
+  }
+  main .my-life-path .life-point-wrapper #scnd-history {
+    background: var(--background-history);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+            animation: gradient 10s ease infinite;
+  }
+  main .my-life-path .life-point-wrapper #scnd-history:hover {
+    outline: 3px solid white;
+  }
+  main .my-life-path .life-point-wrapper #thrd-history {
+    background: var(--background-history);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+            animation: gradient 10s ease infinite;
+  }
+  main .my-life-path .life-point-wrapper #thrd-history:hover {
+    outline: 3px solid white;
+  }
+  main .my-life-path .life-point-wrapper #frth-history {
+    background: var(--background-history);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 10s ease infinite;
+            animation: gradient 10s ease infinite;
+    margin-bottom: 10px;
+  }
+  main .my-life-path .life-point-wrapper #frth-history:hover {
+    outline: 3px solid white;
+  }
+  main .currently-reading-wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 10px;
+    background-color: #ececec;
+  }
+  main .currently-reading-wrapper .reading-title-main-wrapper {
+    background: -o-linear-gradient(45deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+    background: linear-gradient(45deg, #9664bc 0%, #39279a 50%, #0f0925 100%);
+    padding-bottom: 2px;
+    width: 100%;
+  }
+  main .currently-reading-wrapper .reading-title-main-wrapper .reading-title-main {
+    background-color: #ececec;
+    background-image: url(../photos/icos/shape_5230.png);
+    background-size: 77px;
+    background-repeat: no-repeat;
+    background-position-x: 2%;
+    background-position-y: 50%;
+  }
+  main .currently-reading-wrapper .reading-title-main-wrapper .reading-title-main .reading-title {
+    display: inline-block;
+    color: black;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-left: 94px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  main .currently-reading-wrapper .image-wrapper {
+    background-color: #ececec;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .currently-reading-wrapper .image-wrapper .content {
+    margin-top: 20px;
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 20%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .currently-reading-wrapper .image-wrapper .content img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  main .currently-reading-wrapper .image-wrapper .content .title {
+    color: black;
+    opacity: 0.8;
+    padding-top: 10px;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  main .currently-reading-wrapper .image-wrapper .content .author {
+    color: black;
+    opacity: 0.8;
+    padding-top: 10px;
+    font-family: 'Urbanist', 'Comfortaa', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  main .currently-reading-wrapper .image-wrapper .content:last-child {
+    margin-bottom: 10px;
+  }
+}
